@@ -2,7 +2,7 @@
 
 Application de bureau pour Windows qui garde vos applications à jour et les installe en quelques clics, avec [winget](https://learn.microsoft.com/windows/package-manager/winget/).
 
-**[Télécharger la dernière version](https://github.com/Lasdepic/winPilot-releases/releases/latest)**
+**[Télécharger la dernière version](https://github.com/Lasdepic/winPilot-releases/releases/latest)** · [Site web](https://lasdepic.github.io/winPilot-releases/)
 
 ![Accueil de WinPilot](screenshots/accueil.png)
 
