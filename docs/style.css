@@ -113,6 +113,8 @@ p { margin: 0; }
 
 .nav a:hover, .nav a[aria-current='page'] { background: var(--bg); color: var(--text); }
 
+.nav .lang { border: 1px solid var(--border); font-size: 0.82rem; letter-spacing: 0.04em; }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -293,4 +295,9 @@ details p { margin-top: 10px; color: var(--text-soft); }
 @media (max-width: 520px) {
   .nav .optional { display: none; }
   .nav a { padding: 7px 8px; }
+}
+
+/* The hero's button stays just below: the menu must fit next to the logo. */
+@media (max-width: 380px) {
+  .nav a[href$='#telecharger'], .nav a[href$='#download'] { display: none; }
 }

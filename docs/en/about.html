@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About WinPilot</title>
+  <meta name="description" content="Why WinPilot exists, how it works and what it does with your data.">
+  <meta property="og:title" content="About WinPilot">
+  <meta property="og:description" content="Why WinPilot exists, how it works and what it does with your data.">
+  <link rel="icon" href="../img/logo.png">
+  <link rel="alternate" hreflang="fr" href="https://lasdepic.github.io/winPilot-releases/about.html">
+  <link rel="alternate" hreflang="en" href="https://lasdepic.github.io/winPilot-releases/en/about.html">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="../img/logo.png" alt="" width="32" height="32">WinPilot</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="optional" href="index.html#features">Features</a>
+        <a class="optional" href="index.html#screenshots">Screenshots</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html#download">Download</a>
+        <a class="lang" href="../about.html" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="narrow prose">
+    <div class="page-head">
+      <h1>About</h1>
+      <p>On Windows, every app updates in its own way. WinPilot brings them together in one place.</p>
+    </div>
+
+    <section>
+      <h2>Why WinPilot</h2>
+      <p>Windows already includes a very complete package manager, winget, but it runs from the command line. WinPilot gives it a simple interface: see what is up to date, tick, confirm.</p>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <p>WinPilot runs <a href="https://learn.microsoft.com/windows/package-manager/winget/">winget</a> on your PC and shows its results. Apps therefore come from winget's sources, not from a WinPilot server.</p>
+      <p>The one exception is Sidekick, which is not in winget and installs from its GitHub repository.</p>
+    </section>
+
+    <section>
+      <h2>Your data</h2>
+      <ul>
+        <li>No account or sign-up.</li>
+        <li>No telemetry or usage statistics.</li>
+        <li>Your settings and history stay on your PC.</li>
+        <li>WinPilot goes online for winget, to check GitHub for its own updates and to download the apps you ask for.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Requirements</h2>
+      <ul>
+        <li>Windows 10 or 11</li>
+        <li>winget (“App Installer”)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>Why does Windows show a warning during installation?</summary>
+        <p>The installer is not signed with a code signing certificate, so SmartScreen does not recognize its publisher. Click “More info”, then “Run anyway”.</p>
+      </details>
+      <details>
+        <summary>How does WinPilot update itself?</summary>
+        <p>It checks for a new version at startup and then every 6 hours, and downloads it. You choose when to install it.</p>
+      </details>
+      <details>
+        <summary>Can I ignore an app?</summary>
+        <p>Yes, you can ignore an app or just one specific version.</p>
+      </details>
+      <details>
+        <summary>Does WinPilot work on Mac or Linux?</summary>
+        <p>No, it relies on winget, which only exists on Windows.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>WinPilot. Not affiliated with Microsoft.</span>
+      <a href="https://github.com/Lasdepic/winPilot-releases/releases">All versions</a>
+    </div>
+  </footer>
+  <script src="../site.js" defer></script>
+</body>
+</html>

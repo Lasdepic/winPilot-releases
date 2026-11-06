@@ -9,7 +9,11 @@ fetch(API)
     if (!installer) return
 
     const size = Math.round(installer.size / 1048576)
-    const label = `Version ${release.tag_name.replace(/^v/, '')} · ${size} Mo · Windows 10 et 11`
+    const version = release.tag_name.replace(/^v/, '')
+    const label =
+      document.documentElement.lang === 'en'
+        ? `Version ${version} · ${size} MB · Windows 10 and 11`
+        : `Version ${version} · ${size} Mo · Windows 10 et 11`
 
     document.querySelectorAll('[data-download]').forEach((link) => {
       link.href = installer.browser_download_url
