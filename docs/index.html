@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WinPilot : vos applications Windows à jour</title>
-  <meta name="description" content="WinPilot liste les mises à jour de vos applications Windows et les installe avec winget, sans ligne de commande.">
-  <meta property="og:title" content="WinPilot : vos applications Windows à jour">
-  <meta property="og:description" content="WinPilot liste les mises à jour de vos applications Windows et les installe avec winget, sans ligne de commande.">
+  <title>WinPilot : votre PC Windows à jour</title>
+  <meta name="description" content="WinPilot met à jour vos applications Windows avec winget, surveille vos pilotes et libère de l'espace disque, sans ligne de commande.">
+  <meta property="og:title" content="WinPilot : votre PC Windows à jour">
+  <meta property="og:description" content="WinPilot met à jour vos applications Windows avec winget, surveille vos pilotes et libère de l'espace disque, sans ligne de commande.">
+  <meta property="og:image" content="https://lasdepic.github.io/winPilot-releases/img/accueil-clair.png">
   <link rel="icon" href="img/logo.png">
   <link rel="alternate" hreflang="fr" href="https://lasdepic.github.io/winPilot-releases/">
   <link rel="alternate" hreflang="en" href="https://lasdepic.github.io/winPilot-releases/en/">
@@ -16,7 +17,7 @@
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="32" height="32">WinPilot</a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="28" height="28">WinPilot</a>
       <nav class="nav" aria-label="Navigation principale">
         <a class="optional" href="index.html#fonctionnalites">Fonctionnalités</a>
         <a class="optional" href="index.html#captures">Captures</a>
@@ -28,55 +29,130 @@
   </header>
   <main id="contenu">
     <div class="hero wrap">
-      <h1>Vos applications Windows,<br>toujours à jour.</h1>
-      <p class="lead">WinPilot repère les mises à jour de vos logiciels et les installe pour vous avec winget, sans ligne de commande.</p>
-      <a class="btn" href="https://github.com/Lasdepic/winPilot-releases/releases/latest" data-download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg> Télécharger pour Windows</a>
+      <h1>Votre PC Windows,<br>toujours à jour.</h1>
+      <p class="lead">WinPilot met à jour vos applications avec winget, surveille vos pilotes et libère de l'espace disque. Sans ligne de commande.</p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/Lasdepic/winPilot-releases/releases/latest" data-download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg> Télécharger pour Windows</a>
+        <a class="btn btn-ghost" href="#captures">Voir l'application</a>
+      </div>
       <p class="meta" data-version>Windows 10 et 11</p>
       <div class="shot">
         <picture>
           <source srcset="img/accueil-sombre.png" media="(prefers-color-scheme: dark)">
-          <img src="img/accueil-clair.png" alt="Accueil de WinPilot : 5 mises à jour disponibles et catalogue d'applications par catégorie" width="1200" height="800" fetchpriority="high">
+          <img src="img/accueil-clair.png" alt="Accueil de WinPilot : 5 mises à jour d'applications et 3 pilotes à mettre à jour, puis le catalogue d'applications par catégorie" width="1200" height="800" fetchpriority="high">
         </picture>
       </div>
     </div>
 
     <section id="fonctionnalites" class="wrap">
       <div class="section-title">
-        <h2>Tout ce qu'il faut, rien de plus</h2>
+        <h2>Tout l'entretien du PC au même endroit</h2>
+        <p>Applications, pilotes et espace disque : WinPilot vous montre ce qui peut être fait, et c'est vous qui validez.</p>
       </div>
       <div class="cards">
-        <div class="card"><h3>Tout mettre à jour</h3><p>Voyez ce qui a une nouvelle version, puis mettez tout à jour ou seulement ce que vous cochez.</p></div>
-        <div class="card"><h3>99 applications à portée de clic</h3><p>Un catalogue en 12 catégories, et la recherche winget pour trouver le reste.</p></div>
-        <div class="card"><h3>Discret en arrière-plan</h3><p>WinPilot peut rester dans la zone de notification, vérifier tout seul et vous prévenir.</p></div>
-        <div class="card"><h3>Vous gardez la main</h3><p>Ignorez une application ou une version, et consultez l'historique des opérations.</p></div>
-        <div class="card"><h3>Sans compte, sans télémétrie</h3><p>Pas d'inscription, et WinPilot n'envoie aucune statistique d'utilisation.</p></div>
-        <div class="card"><h3>Clair, sombre, français, anglais</h3><p>L'interface s'adapte à votre thème Windows et se règle en deux langues.</p></div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg></div>
+          <h3>Applications à jour</h3>
+          <p>Voyez ce qui a une nouvelle version, lisez les notes de version, puis mettez tout à jour ou seulement ce que vous cochez. Les versions majeures sont signalées.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 3v4m4-4v4m-4 10v4m4-4v4M3 10h4m-4 4h4m10-4h4m-4 4h4"/></svg></div>
+          <h3>Pilotes</h3>
+          <p>WinPilot liste les pilotes de vos composants et ceux que propose Windows Update. Un point de restauration est tenté avant chaque installation, et vous pouvez revenir à la version précédente.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13"/></svg></div>
+          <h3>Nettoyage prudent</h3>
+          <p>Fichiers temporaires, caches des navigateurs, rapports de plantage, corbeille : vous voyez la place gagnée avant de confirmer. Vos documents ne sont jamais concernés.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1"/></svg></div>
+          <h3>99 applications à portée de clic</h3>
+          <p>Un catalogue en 12 catégories : cochez, WinPilot installe à la suite. La recherche winget trouve le reste.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
+          <h3>Mises à jour automatiques</h3>
+          <p>Dans la zone de notification, WinPilot vérifie toutes les 6 heures. Les applications que vous approuvez se mettent à jour seules, sur secteur et hors versions majeures.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Sans compte, sans télémétrie</h3>
+          <p>Pas d'inscription, aucune statistique envoyée. L'interface suit le thème et la couleur d'accent de Windows, en français ou en anglais.</p>
+        </div>
       </div>
     </section>
 
     <section id="captures" class="wrap">
       <div class="section-title">
         <h2>Aperçu de l'application</h2>
+        <p>Une barre latérale, un onglet par tâche, et le style de Windows 11 en clair comme en sombre.</p>
       </div>
       <div class="showcase">
-        <div class="showcase-text"><h3>Mises à jour</h3><p>La version installée, la nouvelle, et les changements majeurs signalés. Cochez, lancez, c'est fait.</p></div>
+        <div class="showcase-text">
+          <span class="eyebrow">Applications</span>
+          <h3>Cochez, lancez, c'est fait</h3>
+          <p>La version installée, la nouvelle, et les changements majeurs signalés.</p>
+          <ul>
+            <li>Ignorez une application, ou seulement une version.</li>
+            <li>Un échec propose de réessayer en administrateur.</li>
+          </ul>
+        </div>
         <div class="shot"><picture>
-          <source srcset="img/mises-a-jour-sombre.png" media="(prefers-color-scheme: dark)">
-          <img src="img/mises-a-jour-clair.png" alt="Liste des mises à jour disponibles avec les versions" width="1200" height="800" loading="lazy">
+          <source srcset="img/applications-sombre.png" media="(prefers-color-scheme: dark)">
+          <img src="img/applications-clair.png" alt="Liste des 5 mises à jour disponibles avec la version installée et la nouvelle" width="1200" height="800" loading="lazy">
         </picture></div>
       </div>
       <div class="showcase">
-        <div class="showcase-text"><h3>Installation</h3><p>Cochez les applications voulues : WinPilot les installe à la suite, sans question.</p></div>
+        <div class="showcase-text">
+          <span class="eyebrow">Pilotes</span>
+          <h3>Vos composants en un coup d'œil</h3>
+          <p>Carte graphique, réseau, audio et chipset, avec les pilotes proposés par Windows Update.</p>
+          <ul>
+            <li>Nouvelles versions détectées pour NVIDIA et le réseau Realtek.</li>
+            <li>Retour au pilote précédent quand Windows le conserve.</li>
+          </ul>
+        </div>
+        <div class="shot"><picture>
+          <source srcset="img/pilotes-sombre.png" media="(prefers-color-scheme: dark)">
+          <img src="img/pilotes-clair.png" alt="Onglet Pilotes : pilote Windows Update, carte graphique NVIDIA, réseau, audio et chipset" width="1200" height="800" loading="lazy">
+        </picture></div>
+      </div>
+      <div class="showcase">
+        <div class="showcase-text">
+          <span class="eyebrow">Nettoyage</span>
+          <h3>De la place, sans risque</h3>
+          <p>Chaque catégorie affiche sa taille. Les éléments recommandés sont cochés d'avance, les autres attendent votre choix.</p>
+          <ul>
+            <li>Les fichiers récents ou utilisés restent en place.</li>
+            <li>La corbeille n'est vidée qu'après confirmation.</li>
+          </ul>
+        </div>
+        <div class="shot"><picture>
+          <source srcset="img/nettoyage-sombre.png" media="(prefers-color-scheme: dark)">
+          <img src="img/nettoyage-clair.png" alt="Onglet Nettoyage : fichiers temporaires, caches et corbeille avec leur taille" width="1200" height="800" loading="lazy">
+        </picture></div>
+      </div>
+      <div class="showcase">
+        <div class="showcase-text">
+          <span class="eyebrow">Installer</span>
+          <h3>Un nouveau PC prêt en quelques minutes</h3>
+          <p>Cochez les applications voulues : WinPilot les installe à la suite, sans question. Celles déjà présentes sont repérées.</p>
+        </div>
         <div class="shot"><picture>
           <source srcset="img/installer-sombre.png" media="(prefers-color-scheme: dark)">
-          <img src="img/installer-clair.png" alt="Catalogue d'applications à installer, classé par catégorie" width="1200" height="800" loading="lazy">
+          <img src="img/installer-clair.png" alt="Catalogue d'applications à installer, classé par catégorie, avec deux applications cochées" width="1200" height="800" loading="lazy">
         </picture></div>
       </div>
       <div class="showcase">
-        <div class="showcase-text"><h3>Historique</h3><p>Chaque mise à jour, installation et désinstallation reste consultable.</p></div>
+        <div class="showcase-text">
+          <span class="eyebrow">Historique</span>
+          <h3>Tout reste consultable</h3>
+          <p>Mises à jour, installations, désinstallations, pilotes et nettoyages, classés par jour. Un filtre isole les échecs.</p>
+        </div>
         <div class="shot"><picture>
           <source srcset="img/historique-sombre.png" media="(prefers-color-scheme: dark)">
-          <img src="img/historique-clair.png" alt="Historique des dernières opérations" width="1200" height="800" loading="lazy">
+          <img src="img/historique-clair.png" alt="Historique des dernières opérations, classées par jour" width="1200" height="800" loading="lazy">
         </picture></div>
       </div>
       <p class="note">Captures réalisées avec des données d'exemple.</p>
@@ -86,15 +162,15 @@
       <div class="download download-grid">
         <div>
           <h2>Télécharger WinPilot</h2>
-          <a class="btn" href="https://github.com/Lasdepic/winPilot-releases/releases/latest" data-download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg> Télécharger l'installeur</a>
+          <a class="btn" href="https://github.com/Lasdepic/winPilot-releases/releases/latest" data-download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg> Télécharger l'installeur</a>
           <p class="meta" data-version>Windows 10 et 11</p>
-          <p class="meta">Nécessite winget (« App Installer »).</p>
+          <p class="meta">Nécessite winget (« App Installer »), présent d'origine sur Windows 11.</p>
         </div>
         <div>
           <ol class="steps">
             <li>Lancez le fichier <strong>WinPilot-Setup</strong> téléchargé.</li>
             <li>Suivez l'installeur.</li>
-            <li>WinPilot analyse vos applications. Les versions suivantes se proposent ensuite toutes seules.</li>
+            <li>WinPilot analyse vos applications et vos pilotes. Ses nouvelles versions se proposent ensuite toutes seules.</li>
           </ol>
           <p class="callout">L'installeur n'est pas signé : Windows SmartScreen peut afficher un avertissement. Cliquez alors sur <strong>Informations complémentaires</strong>, puis sur <strong>Exécuter quand même</strong>.</p>
         </div>
@@ -104,8 +180,8 @@
   <footer class="site-footer">
     <div class="wrap footer-main">
       <div>
-        <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="32" height="32">WinPilot</a>
-        <p class="footer-tag">Vos applications Windows, toujours à jour.</p>
+        <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="28" height="28">WinPilot</a>
+        <p class="footer-tag">Votre PC Windows, toujours à jour.</p>
       </div>
       <nav class="footer-links" aria-label="Pied de page">
         <a href="index.html#fonctionnalites">Fonctionnalités</a>

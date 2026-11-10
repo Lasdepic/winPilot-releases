@@ -16,7 +16,7 @@
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="32" height="32">WinPilot</a>
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="28" height="28">WinPilot</a>
       <nav class="nav" aria-label="Navigation principale">
         <a class="optional" href="index.html#fonctionnalites">Fonctionnalités</a>
         <a class="optional" href="index.html#captures">Captures</a>
@@ -29,7 +29,7 @@
   <main id="contenu" class="narrow prose">
     <div class="page-head">
       <h1>À propos</h1>
-      <p>Sous Windows, chaque application se met à jour à sa façon. WinPilot les réunit au même endroit.</p>
+      <p>Sous Windows, chaque application et chaque pilote se met à jour à sa façon. WinPilot réunit tout au même endroit.</p>
     </div>
 
     <section>
@@ -41,6 +41,8 @@
       <h2>Comment ça marche</h2>
       <p>WinPilot lance <a href="https://learn.microsoft.com/windows/package-manager/winget/">winget</a> sur votre PC et affiche ses résultats. Les applications viennent donc des sources de winget, et non d'un serveur de WinPilot.</p>
       <p>Seule exception : Sidekick, qui n'est pas dans winget, s'installe depuis son dépôt GitHub.</p>
+      <p>Pour les pilotes, WinPilot lit ceux installés sur votre PC et interroge Windows Update. Les nouvelles versions des cartes graphiques NVIDIA viennent du site de NVIDIA, celles des cartes réseau Realtek du catalogue Microsoft Update. Pour les autres composants, WinPilot ouvre le site ou l'application du fabricant.</p>
+      <p>Le nettoyage ne touche qu'à des dossiers précis : fichiers temporaires, caches, rapports de plantage, miniatures et corbeille. Les dossiers système demandent une autorisation d'administrateur.</p>
     </section>
 
     <section>
@@ -50,6 +52,7 @@
         <li>Pas de télémétrie ni de statistiques d'utilisation.</li>
         <li>Vos réglages et votre historique restent sur votre PC.</li>
         <li>WinPilot se connecte à Internet pour winget, pour chercher ses propres mises à jour sur GitHub et pour télécharger les applications que vous demandez.</li>
+        <li>Pour les pilotes, il interroge Windows Update, le catalogue Microsoft Update et le site de NVIDIA avec le modèle de vos composants.</li>
       </ul>
     </section>
 
@@ -72,6 +75,18 @@
         <p>Il cherche une nouvelle version au démarrage puis toutes les 6 heures, et la télécharge. C'est vous qui choisissez quand l'installer.</p>
       </details>
       <details>
+        <summary>Installer un pilote avec WinPilot est-il risqué ?</summary>
+        <p>Les pilotes viennent de Windows Update ou du catalogue Microsoft, et Windows vérifie leur signature. Un point de restauration est tenté avant l'installation, et vous pouvez revenir au pilote précédent tant que Windows le conserve.</p>
+      </details>
+      <details>
+        <summary>Le nettoyage peut-il supprimer mes fichiers ?</summary>
+        <p>Non. Il ne vise que des dossiers temporaires et des caches connus, jamais vos documents. Les fichiers récents ou utilisés restent en place, et la corbeille n'est vidée qu'après confirmation.</p>
+      </details>
+      <details>
+        <summary>Comment fonctionnent les mises à jour automatiques ?</summary>
+        <p>Activez la surveillance dans les réglages, puis choisissez les applications concernées depuis le menu « … » de leur ligne. Elles se mettent à jour quand la fenêtre de WinPilot n'est pas affichée et que le PC est sur secteur, sauf les versions majeures.</p>
+      </details>
+      <details>
         <summary>Puis-je ignorer une application ?</summary>
         <p>Oui, vous pouvez ignorer une application ou seulement une version précise.</p>
       </details>
@@ -84,8 +99,8 @@
   <footer class="site-footer">
     <div class="wrap footer-main">
       <div>
-        <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="32" height="32">WinPilot</a>
-        <p class="footer-tag">Vos applications Windows, toujours à jour.</p>
+        <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="28" height="28">WinPilot</a>
+        <p class="footer-tag">Votre PC Windows, toujours à jour.</p>
       </div>
       <nav class="footer-links" aria-label="Pied de page">
         <a href="index.html#fonctionnalites">Fonctionnalités</a>

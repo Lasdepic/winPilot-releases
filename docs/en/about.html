@@ -16,7 +16,7 @@
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="../img/logo.png" alt="" width="32" height="32">WinPilot</a>
+      <a class="brand" href="index.html"><img src="../img/logo.png" alt="" width="28" height="28">WinPilot</a>
       <nav class="nav" aria-label="Main navigation">
         <a class="optional" href="index.html#features">Features</a>
         <a class="optional" href="index.html#screenshots">Screenshots</a>
@@ -29,7 +29,7 @@
   <main id="content" class="narrow prose">
     <div class="page-head">
       <h1>About</h1>
-      <p>On Windows, every app updates in its own way. WinPilot brings them together in one place.</p>
+      <p>On Windows, every app and every driver updates in its own way. WinPilot brings it all together in one place.</p>
     </div>
 
     <section>
@@ -41,6 +41,8 @@
       <h2>How it works</h2>
       <p>WinPilot runs <a href="https://learn.microsoft.com/windows/package-manager/winget/">winget</a> on your PC and shows its results. Apps therefore come from winget's sources, not from a WinPilot server.</p>
       <p>The one exception is Sidekick, which is not in winget and installs from its GitHub repository.</p>
+      <p>For drivers, WinPilot reads the ones installed on your PC and queries Windows Update. New versions for NVIDIA graphics cards come from NVIDIA's website, those for Realtek network adapters from the Microsoft Update Catalog. For other components, WinPilot opens the manufacturer's website or app.</p>
+      <p>Cleanup only touches specific folders: temporary files, caches, crash reports, thumbnails and the Recycle Bin. System folders require administrator permission.</p>
     </section>
 
     <section>
@@ -50,6 +52,7 @@
         <li>No telemetry or usage statistics.</li>
         <li>Your settings and history stay on your PC.</li>
         <li>WinPilot goes online for winget, to check GitHub for its own updates and to download the apps you ask for.</li>
+        <li>For drivers, it queries Windows Update, the Microsoft Update Catalog and NVIDIA's website with the model of your components.</li>
       </ul>
     </section>
 
@@ -72,6 +75,18 @@
         <p>It checks for a new version at startup and then every 6 hours, and downloads it. You choose when to install it.</p>
       </details>
       <details>
+        <summary>Is it risky to install a driver with WinPilot?</summary>
+        <p>Drivers come from Windows Update or the Microsoft catalog, and Windows checks their signature. A restore point is attempted before installing, and you can roll back to the previous driver as long as Windows keeps it.</p>
+      </details>
+      <details>
+        <summary>Can cleanup delete my files?</summary>
+        <p>No. It only targets known temporary folders and caches, never your documents. Recent files and files in use stay in place, and the Recycle Bin is only emptied after you confirm.</p>
+      </details>
+      <details>
+        <summary>How do automatic updates work?</summary>
+        <p>Turn on monitoring in the settings, then pick the apps from the “…” menu on their row. They update while the WinPilot window is not displayed and the PC is plugged in, except for major versions.</p>
+      </details>
+      <details>
         <summary>Can I ignore an app?</summary>
         <p>Yes, you can ignore an app or just one specific version.</p>
       </details>
@@ -84,8 +99,8 @@
   <footer class="site-footer">
     <div class="wrap footer-main">
       <div>
-        <a class="brand" href="index.html"><img src="../img/logo.png" alt="" width="32" height="32">WinPilot</a>
-        <p class="footer-tag">Your Windows apps, always up to date.</p>
+        <a class="brand" href="index.html"><img src="../img/logo.png" alt="" width="28" height="28">WinPilot</a>
+        <p class="footer-tag">Your Windows PC, always up to date.</p>
       </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="index.html#features">Features</a>
